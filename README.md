@@ -7,6 +7,8 @@ After you have successfully configured this you can:
 - Matrix Authentication Service is properly working
 - federation
 
+https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/prerequisites.md
+
 1. Get a VPS from Hetzner for example.
 2. change VPS Password
 3. Update VPS: "apt update && apt upgrade -y"
