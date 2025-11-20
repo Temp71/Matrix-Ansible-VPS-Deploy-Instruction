@@ -55,7 +55,7 @@ rm -rf roles/galaxy; ansible-galaxy install -r requirements.yml -p roles/galaxy/
 ```cmd
 ansible-playbook -i inventory/hosts setup.yml --tags=install-all,ensure-matrix-users-created,start --ask-pass
 ```
-12. If it was successful without failed services you can create an Admin user on your Server with this command:
+12. If it was successful without failed services you can create an Admin user on your Server with this command but change YOURUSERNAME and YOURPASSWORD before:
 ```cmd
 ansible-playbook -i inventory/hosts setup.yml --extra-vars='username=YOURUSERNAME password=YOURPASSWORD admin=yes' --tags=register-user --ask-pass
 ```
