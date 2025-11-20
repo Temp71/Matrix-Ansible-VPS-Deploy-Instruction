@@ -10,5 +10,5 @@ This is an Instruction on how to deploy spantaleev/matrix-docker-ansible-deploy 
 8. Now from you your PC create a folder somewhere and clone this Repository "https://github.com/spantaleev/matrix-docker-ansible-deploy.git"
 9. Go into matrix-docker-ansible-deploy folder and run these commands "mkdir -p inventory/host_vars/matrix.example.com" (example.com = your Domain so change it!)
 10. download the vars.yml from here and put it in this folder inventory/host_vars/matrix.example.com/HERE.
-11. checkout the configuration of the vars.yaml 
+11. checkout the configuration of the vars.yaml [Configuring-the-playbook.md](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/Configuring-the-playbook.md)
 
