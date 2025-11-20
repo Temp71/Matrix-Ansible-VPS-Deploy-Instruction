@@ -1,13 +1,13 @@
 # Matrix-Ansible-VPS-Deploy-Instruction
-This is an Instruction on how to deploy spantaleev/matrix-docker-ansible-deploy on a Server tested on Hetzner
+This is an Instruction on how to deploy [spantaleev/matrix-docker-ansible-deploy](https://github.com/spantaleev/matrix-docker-ansible-deploy) on a Server tested on Hetzner
 After you have successfully configured this you can:
 - login with QR code
 - use the Audio/Video call feauture inside Element.
 - Have an Element Web instance (element.mydomain.com)
 - Matrix Authentication Service is properly working
 - federation
-
-https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/prerequisites.md
+  
+  Important READ [prerequisites.md](https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/prerequisites.md)
 
 1. Get a VPS from Hetzner for example.
 2. change VPS Password
