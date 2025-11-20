@@ -28,15 +28,15 @@ sudo ufw status
 ```cmd
 git clone https://github.com/spantaleev/matrix-docker-ansible-deploy.git
 ```
-7. Go into matrix-docker-ansible-deploy folder and run these commands
+7. Go into ```matrix-docker-ansible-deploy``` folder and run these commands
 ```cmd
 mkdir -p inventory/host_vars/matrix.example.com
 ```
 example.com = your Domain so change it!
 
-8. download the [vars.yml](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/vars.yml) from here and put it in this folder inventory/host_vars/matrix.example.com/HERE.
+8. download the [vars.yml](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/vars.yml) from here and put it in this folder ```inventory/host_vars/matrix.example.com/HERE```.
 9. checkout the configuration of the vars.yaml [Configuring-the-playbook.md](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/Configuring-the-playbook.md)
-10. After you configured the vars.yml go back to the matrix-docker-ansible-deploy folder and do
+10. After you configured the vars.yml go back to the ```matrix-docker-ansible-deploy``` folder and do
 ```cmd
 cp examples/hosts inventory/hosts
 ```
@@ -45,7 +45,7 @@ nano inventory/hosts
 ```
 to configure the VPS where you want to install your matrix Server.
 
-11. Make sure youre again in matrix-docker-ansible-deploy and then do
+11. Make sure youre again in ```matrix-docker-ansible-deploy``` and then do
 ```cmd
 git pull
 ```
