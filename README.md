@@ -23,20 +23,19 @@ sudo ufw allow ssh && sudo ufw allow 80/tcp && sudo ufw allow 443/tcp && sudo uf
 ```cmd
 sudo ufw status
 ```
-5. Now youre done on the VPS.
-6. Now from you your PC create a folder somewhere and clone this Repository with
+5. Now you need to create a folder on your PC somewhere and clone this Repository
 ```cmd
 git clone https://github.com/spantaleev/matrix-docker-ansible-deploy.git
 ```
-7. Go into ```matrix-docker-ansible-deploy``` folder and run these commands
+6. Go into ```matrix-docker-ansible-deploy``` folder and run these commands
 ```cmd
 mkdir -p inventory/host_vars/matrix.example.com
 ```
 example.com = your Domain so change it!
 
-8. download the [vars.yml](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/vars.yml) from here and put it in this folder ```inventory/host_vars/matrix.example.com/HERE```.
-9. checkout the configuration of the vars.yaml [Configuring-the-playbook.md](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/Configuring-the-playbook.md)
-10. After you configured the vars.yml go back to the ```matrix-docker-ansible-deploy``` folder and do
+7. download the [vars.yml](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/vars.yml) from here and put it in this folder ```inventory/host_vars/matrix.example.com/HERE```.
+8. checkout the configuration of the vars.yaml [Configuring-the-playbook.md](https://github.com/Temp71/Matrix-Ansible-VPS-Deploy-Instruction/blob/main/Configuring-the-playbook.md)
+9. After you configured the vars.yml go back to the ```matrix-docker-ansible-deploy``` folder and do
 ```cmd
 cp examples/hosts inventory/hosts
 ```
@@ -45,7 +44,7 @@ nano inventory/hosts
 ```
 to configure the VPS where you want to install your matrix Server.
 
-11. Make sure youre again in ```matrix-docker-ansible-deploy``` and then do
+10. Make sure youre again in ```matrix-docker-ansible-deploy``` and then do
 ```cmd
 git pull
 ```
@@ -55,7 +54,7 @@ rm -rf roles/galaxy; ansible-galaxy install -r requirements.yml -p roles/galaxy/
 ```cmd
 ansible-playbook -i inventory/hosts setup.yml --tags=install-all,ensure-matrix-users-created,start --ask-pass
 ```
-12. If it was successful without failed services you can create an Admin user on your Server with this command but change YOURUSERNAME and YOURPASSWORD before:
+11. If it was successful without failed services you can create an Admin user on your Server with this command but change YOURUSERNAME and YOURPASSWORD before:
 ```cmd
 ansible-playbook -i inventory/hosts setup.yml --extra-vars='username=YOURUSERNAME password=YOURPASSWORD admin=yes' --tags=register-user --ask-pass
 ```
